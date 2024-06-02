@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFitnessPal - Personalise Food</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyFitnessPal</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="log-meal.html">Log Meal</a></li>
+                <li><a href="track-exercise.html">Track Exercise</a></li>
+                <li><a href="view-progress.html">View Progress</a></li>
+                <li><a href="personalise-food.html">Personalise Food</a></li>
+                <li><a href="#recipes">Healthy Recipes</a></li>
+                <li><a href="#tips">Fitness Tips</a></li>
+                <li><a href="#forums">Community Forums</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="personalise-food">
+            <h1>Personalise Your Food</h1>
+            <form id="food-preference-form">
+                <label for="dietary-preferences">Dietary Preferences:</label>
+                <input type="text" id="dietary-preferences" placeholder="e.g., Vegetarian, Vegan, Keto" required>
+                
+                <label for="allergies">Allergies:</label>
+                <input type="text" id="allergies" placeholder="e.g., Peanuts, Gluten, Dairy">
+                
+                <label for="favorite-foods">Favorite Foods:</label>
+                <input type="text" id="favorite-foods" placeholder="e.g., Chicken, Avocado, Berries">
+                
+                <button type="submit">Get Recommendations</button>
+            </form>
+            <div id="food-recommendations"></div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

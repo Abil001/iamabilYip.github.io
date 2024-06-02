@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFitnessPal - Track Exercise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyFitnessPal</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="log-meal.html">Log Meal</a></li>
+                <li><a href="track-exercise.html">Track Exercise</a></li>
+                <li><a href="view-progress.html">View Progress</a></li>
+                <li><a href="personalise-food.html">Personalise Food</a></li>
+                <li><a href="#recipes">Healthy Recipes</a></li>
+                <li><a href="#tips">Fitness Tips</a></li>
+                <li><a href="#forums">Community Forums</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="track-exercise">
+            <h1>Track Your Exercise</h1>
+            <form id="exercise-form">
+                <label for="exercise-name">Exercise Name:</label>
+                <input type="text" id="exercise-name" placeholder="e.g., Running, Yoga" required>
+                
+                <label for="exercise-duration">Duration (minutes):</label>
+                <input type="number" id="exercise-duration" placeholder="e.g., 30" required>
+                
+                <button type="submit">Track Exercise</button>
+            </form>
+            <div id="exercise-feedback"></div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
